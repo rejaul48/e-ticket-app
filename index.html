@@ -15,6 +15,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <!-- font Awesome icon kit link -->
+    <script src="https://kit.fontawesome.com/43c9d1f051.js" crossorigin="anonymous"></script>
     <!-- Tailwind cdn and DaisyUi cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,6 +27,7 @@
 
                     colors: {
                         primary: '#1DD100',
+                        primaryLight: 'rgba(29, 209, 0, 0.1)',
                         secondary: '#F7F8F8',
                         body: '#03071299',
                         couponOne: 'rgb(255, 191, 15)',
@@ -34,7 +37,7 @@
                         bgSecondary: 'rgb(247, 248, 248)',
                     },
                     fontFamily: {
-                        RaleWay: 'Raleway',
+                        ReleWay: 'Raleway',
                         Inter: 'Inter',
                     }
 
@@ -45,11 +48,204 @@
 
 </head>
 
-<body>
+<body style="background: #f2f2f2;">
 
-    <p class="RailWay text-primary">This is RailWay font</p>
-    <p class="Inter">This is Inter font</p>
+    <section class="max-w-[85%] mx-auto">
+        <!-- this is header section -->
+        <!-- menubar  -->
 
+        <header>
+
+            <nav class="py-3">
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                <li><a>Item 1</a></li>
+                                <li>
+                                    <a>Parent</a>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Item 3</a></li>
+                            </ul>
+                        </div>
+                        <a class="text-3xl font-ReleWay font-extrabold">P-Ticket</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+
+                            <li><a class="text-[18px] font-ReleWay font-medium">Home</a></li>
+                            <li><a class="text-[18px] font-ReleWay font-medium">About</a></li>
+                            <li><a class="text-[18px] font-ReleWay font-medium">Destination</a></li>
+                            <li><a class="text-[18px] font-ReleWay font-medium">Search</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <button
+                            class="flex items-center justify-center gap-2 bg-primaryLight p-2 border-solid border-2 border-primaryLight rounded-lg">
+                            <h3 class="font-semibold text-primary">Bus</h3>
+                            <img src="images/bus-icon.png" alt="bus icon">
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- hero section start -->
+            <section class="hero w-full h-[550px]">
+                <div class="hero h-full"
+                    style="background-image: url(images/banner.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                    <!-- <div class="hero-overlay"></div> -->
+                    <div class="hero-content text-neutral-content text-center">
+                        <div class="max-w-xl">
+                            <h1 class="mb-5 text-[50px] font-bold w-full">End-to-End Travel with <span
+                                    class="text-primary">P
+                                    Paribahan</span></h1>
+                            <p class="mb-5 text-gray-300">
+                                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem
+                                quasi. In deleniti eaque aut repudiandae et a id nisi.
+                            </p>
+                            <button
+                                class="btn bg-primary border-none hover:bg-primaryLight hover:border-primary  hover:border-solid hover:text-white px-12">Buy
+                                Ticket</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- hero section end -->
+            <!-- performance card for hero start -->
+            <section class="grid grid-cols-3 gap-6 w-4/5 mx-auto -mt-12">
+
+                <div class="flex items-center gap-4 bg-white px-4 py-6 rounded-lg">
+                    <div>
+                        <i class="fa-solid fa-users text-4xl text-primary"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold">500k+</h2>
+                        <p class="font-normal">Registered users</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 bg-white px-4 py-6 rounded-lg">
+                    <div>
+                        <i class="fa-solid fa-ticket-simple text-4xl text-primary"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold">1.7 lacks</h2>
+                        <p class="font-normal">Ticket sold</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 bg-white px-4 py-6 rounded-lg">
+                    <div>
+                        <i class="fa-solid fa-handshake text-4xl text-primary"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold">80k+</h2>
+                        <p class="font-normal">Rental partners</p>
+                    </div>
+                </div>
+
+
+
+            </section>
+            <!-- performance card for hero end -->
+
+        </header>
+
+        <!-- this is header section -->
+
+
+
+
+
+        <!-- this is main section -->
+        <main>
+
+            <!-- best for your section start -->
+            <section class="best-for-you">
+
+                <div class="section-head text-center mt-24">
+                    <h2 class="text-4xl font-semibold py-3">Best offers for you</h2>
+                </div>
+
+                <div class="flex gap-8 items-center w-10/12 mx-auto my-12">
+
+                    <div class="coupon-card relative flex gap-32 items-center bg-couponOne py-9 px-8 h-[180px] overflow-hidden rounded-lg">
+
+                        <div class="font-Inter  ">
+                            <h3 class="text-3xl font-bold">15% OFF</h3>
+                            <p class="text-[16px] py-2">on your next purchase</p>
+                            <p class="text-xs">use by January 2024</p>
+                        </div>
+                       
+
+                        <div class="font-ReleWay">
+                            <h3 class="text-2xl font-bold">NEWS15</h3>
+                            <p class="text-xs mt-2">Coupon Code</p>
+                        </div>
+
+
+                        <div class="h-full -mt-20 absolute top-[75px] left-52">
+                            <img src="images/info-devider.png" alt="" class="w-[37px]">
+                        </div>
+
+                    </div>
+
+                    <div class="coupon-card relative flex gap-32 items-center bg-couponTwo py-9 px-8 h-[180px] overflow-hidden rounded-lg">
+
+                        <div class="font-Inter  ">
+                            <h3 class="text-3xl font-bold">20% OFF</h3>
+                            <p class="text-[16px] py-2">on your next purchase</p>
+                            <p class="text-xs">use by January 2024</p>
+                        </div>
+                       
+
+                        <div class="font-ReleWay">
+                            <h3 class="text-2xl font-bold">Couple 20</h3>
+                            <p class="text-xs mt-2">Coupon Code</p>
+                        </div>
+
+
+                        <div class="h-full -mt-20 absolute top-[75px] left-52">
+                            <img src="images/info-devider.png" alt="" class="w-[37px]">
+                        </div>
+
+                    </div>
+                     
+
+                </div>
+
+                <div class="font-RaleWay text-center ">
+                    <button class="btn border-solid border-primary text-primary hover:bg-primary hover:text-white hover:ease-in-out">See All Offers</button>
+                </div>
+
+            </section>
+            <!-- best for your section end -->
+
+        </main>
+        <!-- this is main section -->
+
+        <!-- this is footer section -->
+        <footer>
+
+        </footer>
+        <!-- this is footer section -->
+
+    </section>
+
+  
 </body>
 
 </html>
