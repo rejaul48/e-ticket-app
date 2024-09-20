@@ -47,6 +47,20 @@
         }
     </script>
 
+    <style>
+        /* Hide the up and down arrows for number input */
+        input[type='number']::-webkit-outer-spin-button,
+        input[type='number']::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type='number'] {
+            -moz-appearance: textfield;
+            /* For Firefox */
+        }
+    </style>
+
 </head>
 
 <body style="background: #f2f2f2;">
@@ -60,27 +74,7 @@
             <nav class="py-3">
                 <div class="navbar">
                     <div class="navbar-start">
-                        <div class="dropdown">
-                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h8m-8 6h16" />
-                                </svg>
-                            </div>
-                            <ul tabindex="0"
-                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                                <li><a>Item 1</a></li>
-                                <li>
-                                    <a>Parent</a>
-                                    <ul class="p-2">
-                                        <li><a>Submenu 1</a></li>
-                                        <li><a>Submenu 2</a></li>
-                                    </ul>
-                                </li>
-                                <li><a>Item 3</a></li>
-                            </ul>
-                        </div>
+
                         <a class="text-3xl font-ReleWay font-extrabold">P-Ticket</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
@@ -97,7 +91,7 @@
                     <div class="navbar-end">
                         <button
                             class="flex items-center justify-center gap-2 bg-primaryLight p-2 border-solid border-2 border-primaryLight rounded-lg">
-                            <h3 class="font-semibold text-primary">Bus</h3>
+                            <h3 class="font-semibold text-primary font-ReleWay">Bus</h3>
                             <img src="images/bus-icon.png" alt="bus icon">
                         </button>
                     </div>
@@ -111,16 +105,16 @@
                     <!-- <div class="hero-overlay"></div> -->
                     <div class="hero-content text-neutral-content text-center">
                         <div class="max-w-xl">
-                            <h1 class="mb-5 text-[50px] font-bold w-full">End-to-End Travel with <span
-                                    class="text-primary">P
+                            <h1 class="mb-5 text-[50px] font-bold w-full font-ReleWay">End-to-End Travel with <span
+                                    class="text-primary font-ReleWay">P
                                     Paribahan</span></h1>
-                            <p class="mb-5 text-gray-300">
+                            <p class="mb-5 text-gray-300 font-Inter">
                                 Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
                                 exercitationem
                                 quasi. In deleniti eaque aut repudiandae et a id nisi.
                             </p>
                             <button
-                                class="btn bg-primary border-none hover:bg-primaryLight hover:border-primary  hover:border-solid hover:text-white px-12">Buy
+                                class="btn bg-primary border-none hover:bg-primaryLight hover:border-primary  hover:border-solid hover:text-white px-12 font-ReleWay">Buy
                                 Ticket</button>
                         </div>
                     </div>
@@ -135,18 +129,17 @@
                         <i class="fa-solid fa-users text-4xl text-primary"></i>
                     </div>
                     <div>
-                        <h2 class="text-3xl font-bold">500k+</h2>
-                        <p class="font-normal">Registered users</p>
+                        <h2 class="text-3xl font-bold font-ReleWay">500k+</h2>
+                        <p class="font-normal font-ReleWay">Registered users</p>
                     </div>
                 </div>
-
                 <div class="flex items-center gap-4 bg-white px-4 py-6 rounded-xl border-b-primary border-2">
                     <div>
                         <i class="fa-solid fa-ticket-simple text-4xl text-primary"></i>
                     </div>
                     <div>
-                        <h2 class="text-3xl font-bold">1.7 lacks</h2>
-                        <p class="font-normal">Ticket sold</p>
+                        <h2 class="text-3xl font-bold font-Inter">1.7 lacks</h2>
+                        <p class="font-normal font-Inter">Ticket sold</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-4 bg-white px-4 py-6 rounded-xl border-b-primary border-2">
@@ -154,8 +147,8 @@
                         <i class="fa-solid fa-handshake text-4xl text-primary"></i>
                     </div>
                     <div>
-                        <h2 class="text-3xl font-bold">80k+</h2>
-                        <p class="font-normal">Rental partners</p>
+                        <h2 class="text-3xl font-bold font-Inter">80k+</h2>
+                        <p class="font-normal font-Inter">Rental partners</p>
                     </div>
                 </div>
 
@@ -179,7 +172,7 @@
         <section class="best-for-you">
 
             <div class="section-head text-center mt-24">
-                <h2 class="text-4xl font-semibold py-3">Best offers for you</h2>
+                <h2 class="text-4xl font-semibold py-3 font-ReleWay">Best offers for you</h2>
             </div>
 
             <div class="flex gap-8 items-center max-w-[1300px] mx-auto my-12 justify-center">
@@ -187,7 +180,7 @@
                 <div
                     class="coupon-card relative flex gap-32 items-center bg-couponOne py-9 px-8 h-[180px] overflow-hidden rounded-lg">
 
-                    <div class="font-Inter  ">
+                    <div class="font-Inter">
                         <h3 class="text-3xl font-bold">15% OFF</h3>
                         <p class="text-[16px] py-2">on your next purchase</p>
                         <p class="text-xs">use by January 2024</p>
@@ -201,7 +194,7 @@
 
 
                     <div class="h-full -mt-20 absolute top-[75px] left-52">
-                        <img src="images/info-devider.png" alt="" class="w-[37px]">
+                        <img src="images/cupon-devider.png" alt="" class="w-[42px]">
                     </div>
 
                 </div>
@@ -223,7 +216,7 @@
 
 
                     <div class="h-full -mt-20 absolute top-[75px] left-52">
-                        <img src="images/info-devider.png" alt="" class="w-[37px]">
+                        <img src="images/cupon-devider.png" alt="" class="w-[42px]">
                     </div>
 
                 </div>
@@ -233,7 +226,7 @@
 
             <div class="font-RaleWay text-center ">
                 <button
-                    class="btn border-solid border-primary text-primary hover:bg-primary hover:text-white hover:ease-in-out">See
+                    class="btn border-solid border-primary text-primary hover:bg-primary hover:text-white hover:ease-in-out font-ReleWay">See
                     All Offers</button>
             </div>
 
@@ -243,10 +236,11 @@
         <!-- P.H Paribahan bus and tickets info start -->
         <section class="ph-info bg-phInfo pt-2 mt-20">
 
-            <div class="contaienr">
+            <div class="contaier">
                 <div class="section-head text-center mt-24"></div>
-                <h2 class="text-4xl font-semibold py-3 text-center">Best offers for you</h2>
-                <p class="w-7/12 mx-auto text-center text-lg text-gray-400">Yes, you can run unit tests and view the
+                <h2 class="text-4xl font-semibold py-3 text-center font-ReleWay">P.H Paribahan</h2>
+                <p class="w-7/12 mx-auto text-center text-lg text-gray-400 font-Inter">Yes, you can run unit tests and
+                    view the
                     results directly within the app. The integrated testing features allow for a streamlined .</p>
             </div>
 
@@ -264,32 +258,33 @@
                                     <img src="images/bus-logo.png" alt="bus logo " class="w-[45px]">
                                 </div>
                                 <div>
-                                    <h3 class="text-2xl font-semibold">Greenline Paribahan</h3>
-                                    <p class="text-xs text-gray-400 py-2">Coach-009-WEB ! AC_Business</p>
+                                    <h3 class="text-2xl font-semibold font-ReleWay">Greenline Paribahan</h3>
+                                    <p class="text-xs text-gray-400 py-2 font-Inter">Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
 
                             <div class="flex items-center gap-4 bg-primaryLight py-2 px-3 rounded-lg">
                                 <img src="images/seat-gray.png" alt="seat img">
-                                <p class="text-primary font-bold"><span class="text-xl">40</span> Seats left</p>
+                                <p class="text-primary font-bold font-Inter"><span class="text-xl">40</span> Seats left
+                                </p>
                             </div>
 
                         </div>
 
                         <div class="bg-phInfo py-2 px-4 mt-4 rounded-lg">
-                            <div class="flex justify-between items-center mt-4">
+                            <div class="flex justify-between items-center mt-4 font-ReleWay">
                                 <p class="text-gray-400">Route</p>
                                 <p class="font-semibold text-black">Dhaka-Sylhet</p>
                             </div>
                             <!-- border -->
-                            <div class="border-2 border-dashed border-gray-200 my-2"></div>
+                            <div class="border-2 border-dashed border-gray-200 my-2 "></div>
                             <!-- border -->
-                            <div class="flex justify-between items-center mt-4">
+                            <div class="flex justify-between items-center mt-4 font-ReleWay">
                                 <p class="text-gray-400">Departure Time</p>
                                 <p class="font-semibold text-black">9.00 PM</p>
                             </div>
 
-                            <div class="flex justify-between mt-4 pb-5">
+                            <div class="flex justify-between mt-4 pb-5 font-Inter">
                                 <button class="btn border-neutral-400 text-gray-500">Boarding Point - Laxmipur</button>
                                 <button class="btn border-neutral-400 text-gray-500">Dropping Point - Bogura</button>
                                 <button class="btn border-neutral-400 text-gray-500">Est. Time - 11 Hour</button>
@@ -297,7 +292,7 @@
 
                         </div>
 
- 
+
 
                     </div>
 
@@ -305,7 +300,7 @@
                         <!-- this is just for spacing -->
                     </div>
 
-                    <div class="w-2/12 flex items-center">
+                    <div class="w-2/12 flex items-center font-ReleWay">
                         <div class="font-ReleWay flex flex-col justify-center items-center">
                             <div>
                                 <i
@@ -321,7 +316,321 @@
                     </div>
 
 
-                </div>  
+                </div>
+
+
+                <section class="w-full flex bg-white py-6 px-5 mb-28 rounded-lg">
+
+                    <div class="seat-select w-7/12 pr-2">
+                        <h2 class="text-xl font-semibold pl-1 font-ReleWay">Select Your Seat</h2>
+                        <!-- border -->
+                        <div class="border-dashed border-2 border-b-gray-400 my-2"></div>
+                        <!-- border -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-2 items-center">
+                                <img src="images/seat-gray.png" alt="">
+                                <p class="text-sm text-gray-400 font-Inter">Available</p>
+                            </div>
+
+                            <div class="flex gap-2 items-center">
+                                <img src="images/seat-green.png" alt="">
+                                <p class="text-sm text-primary font-Inter">Selected</p>
+                            </div>
+
+
+
+                        </div>
+
+                        <!-- border -->
+                        <div class="border-dashed border-2 border-b-gray-400 my-2"></div>
+                        <!-- border -->
+
+                        <section class="seat-items-section">
+
+                            <div class="confirm-your-seat">
+                                <div class="grid grid-cols-11 pb-8 ">
+                                    <div class="col-span-9"></div>
+                                    <div class="col-span-2 bg-gray-200 text-center py-3 rounded-xl mt-4">
+                                        <button class="col-span-12"><i
+                                                class="fa-solid fa-car text-xl font-bold text-gray-600"></i></button>
+                                    </div>
+                                </div>
+                                <!-- bus seat section -->
+                                <div class="grid grid-cols-12 items-center pb-4 font-Inter">
+                                    <p class="col-span-1">A</p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">A1</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">A2</button>
+                                    <p class="col-span-3"></p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">A3</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">A4</button>
+                                </div>
+                                <!-- bus seat section -->
+                                <div class="grid grid-cols-12 items-center pb-4 font-Inter">
+                                    <p class="col-span-1">B</p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">B1</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">B2</button>
+                                    <p class="col-span-3"></p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">B3</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">B4</button>
+                                </div>
+
+                                <!-- bus seat section -->
+                                <div class="grid grid-cols-12 items-center pb-4 font-Inter">
+                                    <p class="col-span-1">C</p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">C1</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">C2</button>
+                                    <p class="col-span-3"></p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">C3</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">C4</button>
+                                </div>
+
+                                <!-- bus seat section -->
+                                <div class="grid grid-cols-12 items-center pb-4 font-Inter">
+                                    <p class="col-span-1">D</p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">D1</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">D2</button>
+                                    <p class="col-span-3"></p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">D3</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">D4</button>
+                                </div>
+
+                                <!-- bus seat section -->
+                                <div class="grid grid-cols-12 items-center pb-4 font-Inter">
+                                    <p class="col-span-1">E</p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">E1</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">E2</button>
+                                    <p class="col-span-3"></p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">E3</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">E4</button>
+                                </div>
+
+                                <!-- bus seat section -->
+                                <div class="grid grid-cols-12 items-center pb-4 font-Inter">
+                                    <p class="col-span-1">F</p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">F1</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">F2</button>
+                                    <p class="col-span-3"></p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">F3</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">F4</button>
+                                </div>
+
+                                <!-- bus seat section -->
+                                <div class="grid grid-cols-12 items-center pb-4 font-Inter">
+                                    <p class="col-span-1">G</p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">G1</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">G2</button>
+                                    <p class="col-span-3"></p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">G3</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">G4</button>
+                                </div>
+
+                                <!-- bus seat section -->
+                                <div class="grid grid-cols-12 items-center pb-4 font-Inter">
+                                    <p class="col-span-1">H</p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">H1</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">H2</button>
+                                    <p class="col-span-3"></p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">H3</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">H4</button>
+                                </div>
+
+                                <!-- bus seat section -->
+                                <div class="grid grid-cols-12 items-center pb-4 font-Inter">
+                                    <p class="col-span-1">I</p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">I1</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">I2</button>
+                                    <p class="col-span-3"></p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">I3</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">I4</button>
+                                </div>
+
+                                <!-- bus seat section -->
+                                <div class="grid grid-cols-12 items-center pb-4 font-Inter">
+                                    <p class="col-span-1">J</p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">J1</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">J2</button>
+                                    <p class="col-span-3"></p>
+                                    <button
+                                        class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">J3</button>
+                                    <button
+                                        class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">J4</button>
+                                </div>
+
+
+
+
+                            </div>
+
+                        </section>
+
+
+                    </div>
+
+                    <!-- border -->
+                    <div class="border-dashed border-2 border-r-gray-400 mx-5"></div>
+                    <!-- border -->
+
+                    <!-- seat selection right side -->
+                    <div class="ticket-with-info w-5/12 font-Inter">
+                        <h2 class="text-xl font-semibold ml-8 font-ReleWay">Select Your Seat</h2>
+                        <!-- border -->
+                        <div class="border-dashed border-2 border-b-gray-400 my-2 ml-6 w-11/12 mx-auto mb-6 mt-3"></div>
+                        <!-- border -->
+
+                        <section class="bg-phInfo py-3 px-5 rounded-lg mx-3 font-Inter">
+
+                            <div class="flex justify-between">
+                                <div class="flex">
+                                    <p>Seat</p>
+                                    <span
+                                        class="bg-primary w-[20px] h-[20px] flex justify-center items-center ml-1 -mt-1 rounded-full text-xs text-white">4</span>
+                                </div>
+                                <p>Class</p>
+                                <p>Price</p>
+                            </div>
+
+                            <!-- border -->
+                            <div class="border-dashed border-2 border-b-gray-400 my-2 mb-6 mt-3">
+                            </div>
+                            <!-- border -->
+
+                            <div class="booking-seat-info">
+                                <ul class="flex justify-between items-center text-gray-400 mt-3">
+                                    <li><span>A2</span></li>
+                                    <li><span>Economy</span></li>
+                                    <li><span>550</span></li>
+                                </ul>
+
+                                <ul class="flex justify-between items-center text-gray-400 mt-3">
+                                    <li><span>B2</span></li>
+                                    <li><span>Economy</span></li>
+                                    <li><span>550</span></li>
+                                </ul>
+
+                                <ul class="flex justify-between items-center text-gray-400 mt-3">
+                                    <li><span>C2</span></li>
+                                    <li><span>Economy</span></li>
+                                    <li><span>550</span></li>
+                                </ul>
+                            </div>
+
+                            <!-- border -->
+                            <div class="border-solid border-2 border-b-gray-400 my-2 mb-6 mt-3">
+                            </div>
+                            <!-- border -->
+
+                            <div class="text-lg font-semibold flex justify-between items-center">
+                                <h2>Total Price</h2>
+                                <h2>BDT <span class="ml-1">1650</span></h2>
+                            </div>
+
+                            <!-- coupon code -->
+                            <div class="text-center my-4">
+                                <input type="text" placeholder="Have any coupon"
+                                    class="w-5/6 py-4 px-4 rounded-xl border-none outline-none">
+                                <button
+                                    class="bg-primary px-5 py-3 rounded-xl -ml-20 text-white font-semibold">Apply</button>
+                            </div>
+                            <!-- coupon code -->
+
+                            <div class="text-lg font-semibold flex justify-between items-center">
+                                <h2>Grand Total</h2>
+                                <h2>BDT <span class="ml-1">1650</span></h2>
+                            </div>
+
+                        </section>
+
+
+                        <!-- user's form for more information -->
+
+                        <section>
+
+                            <div class="card w-full ">
+                                <form class="card-body  ">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text text-lg font-semibold">Passenger Name*</span>
+                                        </label>
+                                        <input type="text" placeholder="Enter your name"
+                                            class="input input-bordered w-full py-7" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text text-lg font-semibold">Phone Number*</span>
+                                        </label>
+                                        <input type="number" placeholder="Enter your number"
+                                            class="input py-7 input-bordered" required />
+
+                                    </div>
+
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text text-lg font-semibold">Email ID</span>
+                                        </label>
+                                        <input type="email" placeholder="Enter your email id"
+                                            class="input py-7 input-bordered" required />
+
+                                    </div>
+
+                                    <div class="form-control mt-2">
+                                        <button
+                                            class="btn bg-primary border-none h-[65px] text-lg font-semibold rounded-2xl text-white hover:bg-primaryLight hover:text-black hover: border-2 hover:border-solid hover:border-primary hover:ease-in-out">Next</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="flex justify-evenly">
+                                <a href="#" class="underline hover:text-gray-500 ">Terms and conditions</a>
+                                <a href="#" class=" underline hover:text-gray-500">Cancellation and Policy</a>
+                            </div>
+
+                        </section>
+
+
+                    </div>
+
+                </section>
+
+
+
             </div>
 
 
@@ -334,14 +643,17 @@
     <!-- this is main section -->
 
     <!-- this is footer section -->
-    <footer>
+    <footer class="bg-black py-8 text-white font-ReleWay">
+
+        <p class="text-center">All &copy;Copyright are reserved by <a href="https://facebook.com/mrreja.me"
+                target="_blank" class="text-primary ml-2">Rejaul Islam</a></p>
 
     </footer>
     <!-- this is footer section -->
 
 
 
- 
+
 </body>
 
 </html>
