@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-ticket app with DOM practice</title>
+    <!-- google font default link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Railway font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Inter font family -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind cdn and DaisyUi cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                    colors: {
+                        primary: '#1DD100',
+                        secondary: '#F7F8F8',
+                        body: '#03071299',
+                        couponOne: 'rgb(255, 191, 15)',
+                        couponTwo: 'rgb(247, 140, 156)',
+                        lightText: 'rgba(3, 7, 18, 0.6)',
+                        lightBg: 'rgba(3, 7, 18, 0.1)',
+                        bgSecondary: 'rgb(247, 248, 248)',
+                    },
+                    fontFamily: {
+                        RaleWay: 'Raleway',
+                        Inter: 'Inter',
+                    }
+
+                },
+            },
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <p class="RailWay text-primary">This is RailWay font</p>
+    <p class="Inter">This is Inter font</p>
+
+</body>
+
+</html>
