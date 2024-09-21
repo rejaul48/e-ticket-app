@@ -90,7 +90,7 @@
                     </div>
                     <div class="navbar-end">
                         <button
-                            class="flex items-center justify-center gap-2 bg-primaryLight p-2 border-solid border-2 border-primaryLight rounded-lg">
+                            class="flex items-center justify-center gap-2 bg-primaryLight py-3 px-6 border-solid border-2 border-primaryLight rounded-lg">
                             <h3 class="font-semibold text-primary font-ReleWay">Bus</h3>
                             <img src="images/bus-icon.png" alt="bus icon">
                         </button>
@@ -113,9 +113,9 @@
                                 exercitationem
                                 quasi. In deleniti eaque aut repudiandae et a id nisi.
                             </p>
-                            <button
+                            <a href="#ticketBooking"
                                 class="btn bg-primary border-none hover:bg-primaryLight hover:border-primary  hover:border-solid hover:text-white px-12 font-ReleWay">Buy
-                                Ticket</button>
+                                Ticket</a>
                         </div>
                     </div>
                 </div>
@@ -265,7 +265,8 @@
 
                             <div class="flex items-center gap-4 bg-primaryLight py-2 px-3 rounded-lg">
                                 <img src="images/seat-gray.png" alt="seat img">
-                                <p class="text-primary font-bold font-Inter"><span class="text-xl">40</span> Seats left
+                                <p class="text-primary font-bold font-Inter"><span id="availableSeat"
+                                        class="text-xl">40</span> Seats left
                                 </p>
                             </div>
 
@@ -319,7 +320,7 @@
                 </div>
 
 
-                <section class="w-full flex bg-white py-6 px-5 mb-28 rounded-lg">
+                <section id="ticketBooking" class="w-full flex bg-white py-6 px-5 mb-28 rounded-lg">
 
                     <div class="seat-select w-7/12 pr-2">
                         <h2 class="text-xl font-semibold pl-1 font-ReleWay">Select Your Seat</h2>
@@ -358,143 +359,143 @@
                                 <!-- bus seat section -->
                                 <div class="grid grid-cols-12 items-center pb-4 font-Inter">
                                     <p class="col-span-1">A</p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">A1</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">A2</button>
                                     <p class="col-span-3"></p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">A3</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">A4</button>
                                 </div>
                                 <!-- bus seat section -->
                                 <div class="grid grid-cols-12 items-center pb-4 font-Inter">
                                     <p class="col-span-1">B</p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">B1</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">B2</button>
                                     <p class="col-span-3"></p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">B3</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">B4</button>
                                 </div>
 
                                 <!-- bus seat section -->
                                 <div class="grid grid-cols-12 items-center pb-4 font-Inter">
                                     <p class="col-span-1">C</p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">C1</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">C2</button>
                                     <p class="col-span-3"></p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">C3</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">C4</button>
                                 </div>
 
                                 <!-- bus seat section -->
                                 <div class="grid grid-cols-12 items-center pb-4 font-Inter">
                                     <p class="col-span-1">D</p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">D1</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">D2</button>
                                     <p class="col-span-3"></p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">D3</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">D4</button>
                                 </div>
 
                                 <!-- bus seat section -->
                                 <div class="grid grid-cols-12 items-center pb-4 font-Inter">
                                     <p class="col-span-1">E</p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">E1</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">E2</button>
                                     <p class="col-span-3"></p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">E3</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">E4</button>
                                 </div>
 
                                 <!-- bus seat section -->
                                 <div class="grid grid-cols-12 items-center pb-4 font-Inter">
                                     <p class="col-span-1">F</p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">F1</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">F2</button>
                                     <p class="col-span-3"></p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">F3</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">F4</button>
                                 </div>
 
                                 <!-- bus seat section -->
                                 <div class="grid grid-cols-12 items-center pb-4 font-Inter">
                                     <p class="col-span-1">G</p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">G1</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">G2</button>
                                     <p class="col-span-3"></p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">G3</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">G4</button>
                                 </div>
 
                                 <!-- bus seat section -->
                                 <div class="grid grid-cols-12 items-center pb-4 font-Inter">
                                     <p class="col-span-1">H</p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">H1</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">H2</button>
                                     <p class="col-span-3"></p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">H3</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">H4</button>
                                 </div>
 
                                 <!-- bus seat section -->
                                 <div class="grid grid-cols-12 items-center pb-4 font-Inter">
                                     <p class="col-span-1">I</p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">I1</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">I2</button>
                                     <p class="col-span-3"></p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">I3</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">I4</button>
                                 </div>
 
                                 <!-- bus seat section -->
                                 <div class="grid grid-cols-12 items-center pb-4 font-Inter">
                                     <p class="col-span-1">J</p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">J1</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">J2</button>
                                     <p class="col-span-3"></p>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn bg-phInfo border-none hover:bg-primaryLight ">J3</button>
-                                    <button
+                                    <button onclick="clickSeat(this)"
                                         class="col-span-2 btn ml-3 bg-phInfo border-none hover:bg-primaryLight ">J4</button>
                                 </div>
 
-
+                                <!-- seat booking section for finding -->
 
 
                             </div>
@@ -520,8 +521,8 @@
                             <div class="flex justify-between">
                                 <div class="flex">
                                     <p>Seat</p>
-                                    <span
-                                        class="bg-primary w-[20px] h-[20px] flex justify-center items-center ml-1 -mt-1 rounded-full text-xs text-white">4</span>
+                                    <span id="addSeat"
+                                        class="bg-primary w-[20px] h-[20px] flex justify-center items-center ml-1 -mt-1 rounded-full text-xs text-white">0</span>
                                 </div>
                                 <p>Class</p>
                                 <p>Price</p>
@@ -532,24 +533,12 @@
                             </div>
                             <!-- border -->
 
-                            <div class="booking-seat-info">
-                                <ul class="flex justify-between items-center text-gray-400 mt-3">
-                                    <li><span>A2</span></li>
-                                    <li><span>Economy</span></li>
-                                    <li><span>550</span></li>
-                                </ul>
+                            <div id="seatBookingInfo" class="booking-seat-info">
+                                <div id="notSeatBookingText">
 
-                                <ul class="flex justify-between items-center text-gray-400 mt-3">
-                                    <li><span>B2</span></li>
-                                    <li><span>Economy</span></li>
-                                    <li><span>550</span></li>
-                                </ul>
+                                    <h2 class=" text-center text-2xl text-error font-bold">No Seat Booking</h2>
 
-                                <ul class="flex justify-between items-center text-gray-400 mt-3">
-                                    <li><span>C2</span></li>
-                                    <li><span>Economy</span></li>
-                                    <li><span>550</span></li>
-                                </ul>
+                                </div>
                             </div>
 
                             <!-- border -->
@@ -559,21 +548,21 @@
 
                             <div class="text-lg font-semibold flex justify-between items-center">
                                 <h2>Total Price</h2>
-                                <h2>BDT <span class="ml-1">1650</span></h2>
+                                <h2>BDT <span class="ml-1" id="TotalPrice">0</span></h2>
                             </div>
 
                             <!-- coupon code -->
-                            <div class="text-center my-4">
-                                <input type="text" placeholder="Have any coupon"
+                            <div id="couponDiscount" class="text-center my-4">
+                                <input id="couponApply" disabled type="text" placeholder="Have any coupon"
                                     class="w-5/6 py-4 px-4 rounded-xl border-none outline-none">
-                                <button
-                                    class="bg-primary px-5 py-3 rounded-xl -ml-20 text-white font-semibold">Apply</button>
+                                <button id="couponBtn" disabled
+                                    class="bg-primaryLight px-5 py-3 rounded-xl -ml-20 text-white font-semibold">Apply</button>
                             </div>
                             <!-- coupon code -->
 
                             <div class="text-lg font-semibold flex justify-between items-center">
                                 <h2>Grand Total</h2>
-                                <h2>BDT <span class="ml-1">1650</span></h2>
+                                <h2>BDT <span id="GrandTotalPrice" class="ml-1">0</span></h2>
                             </div>
 
                         </section>
@@ -589,14 +578,14 @@
                                         <label class="label">
                                             <span class="label-text text-lg font-semibold">Passenger Name*</span>
                                         </label>
-                                        <input type="text" placeholder="Enter your name"
+                                        <input id="userName" disabled type="text" placeholder="Enter your name"
                                             class="input input-bordered w-full py-7" required />
                                     </div>
                                     <div class="form-control">
                                         <label class="label">
                                             <span class="label-text text-lg font-semibold">Phone Number*</span>
                                         </label>
-                                        <input type="number" placeholder="Enter your number"
+                                        <input id="userNumber" disabled type="number" placeholder="Enter your number"
                                             class="input py-7 input-bordered" required />
 
                                     </div>
@@ -605,14 +594,15 @@
                                         <label class="label">
                                             <span class="label-text text-lg font-semibold">Email ID</span>
                                         </label>
-                                        <input type="email" placeholder="Enter your email id"
+                                        <input id="userEmail" disabled type="email" placeholder="Enter your email id"
                                             class="input py-7 input-bordered" required />
 
                                     </div>
 
                                     <div class="form-control mt-2">
-                                        <button
-                                            class="btn bg-primary border-none h-[65px] text-lg font-semibold rounded-2xl text-white hover:bg-primaryLight hover:text-black hover: border-2 hover:border-solid hover:border-primary hover:ease-in-out">Next</button>
+                                        <button disabled id="formSubmitBtn"
+                                            class="btn bg-primary border-none h-[65px] text-lg font-semibold rounded-2xl text-white hover:bg-primaryLight hover:text-black hover: border-2 hover:border-solid hover:border-primary hover:ease-in-out"
+                                            onclick="my_modal_5.showModal()">Next</button>
                                     </div>
                                 </form>
                             </div>
@@ -639,6 +629,34 @@
         </section>
         <!-- P.H Paribahan bus and tickets info end -->
 
+
+        <!-- modal -->
+
+        <!-- Open the modal using ID.showModal() method -->
+
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box py-12 font-Inter">
+
+            <div class="flex justify-center items-center">
+                <img src="images/success.png" alt="" class="w-[45px]">
+
+            </div>
+            <h3 class="text-lg font-bold text-center text-primary my-2">Congratulations</h3>
+            <p class="py-4 text-center text-lg font-semibold">Thank you for Booking Our Bus Seats.
+                We are working hard to find the best service and deals for you.
+            </p>
+            <p class="text-center">Shortly you will find a confirmation in your email.</p>
+            <div class="modal-action flex justify-center items-center">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button id="continueBtn" class="btn px-20 bg-primary text-white
+                    hover:bg-primaryLight hover:text-black hover:border-2 hover:border-primary
+                    ">Continue</button>
+                </form>
+            </div>
+        </div>
+        </dialog>
+
     </main>
     <!-- this is main section -->
 
@@ -653,6 +671,8 @@
 
 
 
+    <!-- main js file link here -->
+    <script src="js/main.js"></script>
 
 </body>
 
